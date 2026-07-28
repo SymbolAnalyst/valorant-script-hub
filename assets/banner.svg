@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="50%" stop-color="#14141c"/>
+      <stop offset="100%" stop-color="#1a0a10"/>
+    </linearGradient>
+    <radialGradient id="glowRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff2040" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff2040" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3355" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff3355" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff3355" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffdde3"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff2040" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ff2040" stop-opacity="0.15"/>
+      <stop offset="55%" stop-color="#ff2040" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff2040" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bgGrad)"/>
+
+  <!-- tactical grid -->
+  <g stroke="#ff2040" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="40" x2="1200" y2="40"/>
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="190" x2="1200" y2="190"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="290" x2="1200" y2="290"/>
+    <line x1="150" y1="0" x2="150" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="450" y1="0" x2="450" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="750" y1="0" x2="750" y2="360"/>
+    <line x1="900" y1="0" x2="900" y2="360"/>
+    <line x1="1050" y1="0" x2="1050" y2="360"/>
+  </g>
+
+  <circle cx="980" cy="120" r="260" fill="url(#glowRed)"/>
+
+  <!-- large crosshair motif on right -->
+  <g transform="translate(970,150)" opacity="0.85">
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#ff3355" stroke-width="2" stroke-opacity="0.5"/>
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#ff3355" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="-130" y1="0" x2="-45" y2="0" stroke="#ff3355" stroke-width="3" stroke-opacity="0.8"/>
+    <line x1="45" y1="0" x2="130" y2="0" stroke="#ff3355" stroke-width="3" stroke-opacity="0.8"/>
+    <line x1="0" y1="-130" x2="0" y2="-45" stroke="#ff3355" stroke-width="3" stroke-opacity="0.8"/>
+    <line x1="0" y1="45" x2="0" y2="130" stroke="#ff3355" stroke-width="3" stroke-opacity="0.8"/>
+    <circle cx="0" cy="0" r="4" fill="#ff3355"/>
+  </g>
+
+  <!-- diagonal glitch shards -->
+  <g opacity="0.7">
+    <polygon points="820,30 900,30 860,140 780,140" fill="#ff2040" fill-opacity="0.10"/>
+    <polygon points="900,180 1000,180 950,330 850,330" fill="#ff2040" fill-opacity="0.08"/>
+    <polygon points="1050,50 1140,50 1110,200 1020,200" fill="#ffffff" fill-opacity="0.04"/>
+  </g>
+
+  <!-- scan line band -->
+  <rect x="0" y="150" width="1200" height="60" fill="url(#scanGrad)"/>
+
+  <!-- corner tactical brackets -->
+  <g stroke="#ff3355" stroke-width="2.5" fill="none" opacity="0.6">
+    <polyline points="60,60 60,40 90,40"/>
+    <polyline points="1140,60 1140,40 1110,40"/>
+    <polyline points="60,300 60,320 90,320"/>
+    <polyline points="1140,300 1140,320 1110,320"/>
+  </g>
+
+  <!-- status tag -->
+  <g transform="translate(60,65)">
+    <rect x="0" y="0" width="150" height="26" rx="4" fill="#ff2040" fill-opacity="0.12" stroke="#ff3355" stroke-opacity="0.6"/>
+    <circle cx="16" cy="13" r="4" fill="#39ff88"/>
+    <text x="30" y="18" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#ffdde3" letter-spacing="1">STATUS: CLEAN</text>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="180" font-family="'Segoe UI', Arial, sans-serif" font-size="66" font-weight="800" fill="url(#textGlow)" letter-spacing="1">
+    <tspan x="60" y="170" textLength="920" lengthAdjust="spacingAndGlyphs">VALORANT EXPLOIT</tspan>
+    <tspan x="60" y="245" textLength="560" lengthAdjust="spacingAndGlyphs" fill="#ff3355">UNDETECTED</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="285" font-family="'Segoe UI', Arial, sans-serif" font-size="21" fill="#c9c9d6" textLength="900" lengthAdjust="spacingAndGlyphs">
+    Eliminates manual bypass setup — just run and go, staying fully undetected
+  </text>
+
+  <!-- baseline accent -->
+  <rect x="60" y="300" width="180" height="3" fill="#ff3355"/>
+  <rect x="248" y="300" width="40" height="3" fill="#ff3355" opacity="0.4"/>
+</svg>
